@@ -1,7 +1,7 @@
 build: main1.cpp main2.cpp
 	mkdir -p Build
-	gcc -lpthread -o ./Build/main1 main1.cpp 
-	gcc -lpthread -o ./Build/main2 main2.cpp
+	gcc -o ./Build/main1 main1.cpp -lpthread
+	gcc -o ./Build/main2 main2.cpp -lpthread
 clean:
 	rm -rf Build
 run: build
